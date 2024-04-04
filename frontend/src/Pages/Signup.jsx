@@ -16,6 +16,7 @@ import { FaGoogle, FaFacebook } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 const Signup = ({baseServerURL}) => {
+  console.log(baseServerURL)
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [email, setEmail] = useState('');
