@@ -81,7 +81,6 @@ const sendResetPassword = async (username, email, token) => {
 
 // User Manual Signup
 userRouter.post("/register", async (req, res) => {
-  console.log("registration")
   try {
     const { name, phoneNumber, email, password, role } = req.body;
 
@@ -102,7 +101,6 @@ userRouter.post("/register", async (req, res) => {
       role,
     });
 
-    console.log(newUser)
     // Save the user to the database
     const userData = await newUser.save();
 
